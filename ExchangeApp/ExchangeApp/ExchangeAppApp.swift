@@ -11,7 +11,7 @@ import SwiftUI
 struct ExchangeAppApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            OpeningView()
         }
     }
 }

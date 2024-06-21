@@ -10,7 +10,9 @@ import SwiftUI
 struct SigninView: View {
     @State private var email = ""
     @State private var password = ""
-    
+    @State private var fullname = ""
+    @State private var confirmPassword = ""
+    @Environment(\.dismiss) var dismiss
     var body: some View {
         NavigationStack{
             ZStack {
@@ -21,7 +23,7 @@ struct SigninView: View {
                         .foregroundStyle(Color(.darkGray))
                         .font(.largeTitle)
                         .bold()
-                        .padding(-50)
+                        
                     
                     InputLineView(text: $email,
                                   title: "Email Address",
@@ -29,17 +31,32 @@ struct SigninView: View {
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.none)
                     
+                    InputLineView(text: $fullname,
+                                  title: "Full Name",
+                                  placeholder: "Göknur Arıcan")
+                    
+                    
                     InputLineView(text: $password,
                                   title: "Password",
                                   placeholder: "Enter password", 
                                   isSecuredField: true)
-                    
-                    //Sign in button
-    
+                
+
                     ButtonView(title: "Sign In")
                     
+                    Button{
+                      dismiss()
+                    } label: {
+                        HStack(spacing: 3){
+                            Text("Already have an account?")
+                            Text("Sign In")
+                                .fontWeight(.bold)
+                        }
+                        .font(.system(size: 14))
+                    }
                 }
                 .padding(.horizontal)
+                
             }
         }
     }

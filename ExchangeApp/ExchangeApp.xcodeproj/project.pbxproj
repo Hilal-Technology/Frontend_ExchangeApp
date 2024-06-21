@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2258B09F2C2088B800D134E3 /* ExchangeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258B09E2C2088B800D134E3 /* ExchangeAppApp.swift */; };
-		2258B0A12C2088B800D134E3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258B0A02C2088B800D134E3 /* ContentView.swift */; };
 		2258B0A32C2088BA00D134E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2258B0A22C2088BA00D134E3 /* Assets.xcassets */; };
 		2258B0A62C2088BA00D134E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2258B0A52C2088BA00D134E3 /* Preview Assets.xcassets */; };
 		2258B0B02C2088BA00D134E3 /* ExchangeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258B0AF2C2088BA00D134E3 /* ExchangeAppTests.swift */; };
@@ -26,6 +25,7 @@
 		2258B0E52C257FB800D134E3 /* InputLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258B0E42C257FB800D134E3 /* InputLineView.swift */; };
 		2258B0E72C2597D400D134E3 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258B0E62C2597D400D134E3 /* BackgroundView.swift */; };
 		2258B0E92C25986300D134E3 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258B0E82C25986300D134E3 /* ButtonView.swift */; };
+		2258B0EB2C25B2DB00D134E3 /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258B0EA2C25B2DB00D134E3 /* OpeningView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 /* Begin PBXFileReference section */
 		2258B09B2C2088B800D134E3 /* ExchangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2258B09E2C2088B800D134E3 /* ExchangeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAppApp.swift; sourceTree = "<group>"; };
-		2258B0A02C2088B800D134E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2258B0A22C2088BA00D134E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2258B0A52C2088BA00D134E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2258B0AB2C2088BA00D134E3 /* ExchangeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +67,7 @@
 		2258B0E42C257FB800D134E3 /* InputLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputLineView.swift; sourceTree = "<group>"; };
 		2258B0E62C2597D400D134E3 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		2258B0E82C25986300D134E3 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		2258B0EA2C25B2DB00D134E3 /* OpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,12 +157,12 @@
 		2258B0C82C20A72800D134E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2258B0A02C2088B800D134E3 /* ContentView.swift */,
+				2258B0E62C2597D400D134E3 /* BackgroundView.swift */,
+				2258B0EA2C25B2DB00D134E3 /* OpeningView.swift */,
 				2258B0CB2C20A77200D134E3 /* LoginView.swift */,
 				2258B0DD2C20A89D00D134E3 /* SigninView.swift */,
 				2258B0CF2C20A79100D134E3 /* HomeView.swift */,
 				2258B0D12C20A7A400D134E3 /* ExchangeView.swift */,
-				2258B0E62C2597D400D134E3 /* BackgroundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,10 +330,10 @@
 				2258B0E72C2597D400D134E3 /* BackgroundView.swift in Sources */,
 				2258B0DC2C20A82800D134E3 /* ExchangeViewModel.swift in Sources */,
 				2258B0DE2C20A89D00D134E3 /* SigninView.swift in Sources */,
+				2258B0EB2C25B2DB00D134E3 /* OpeningView.swift in Sources */,
 				2258B0CC2C20A77200D134E3 /* LoginView.swift in Sources */,
 				2258B0E92C25986300D134E3 /* ButtonView.swift in Sources */,
 				2258B0D62C20A80300D134E3 /* HomeViewModel.swift in Sources */,
-				2258B0A12C2088B800D134E3 /* ContentView.swift in Sources */,
 				2258B0D02C20A79100D134E3 /* HomeView.swift in Sources */,
 				2258B09F2C2088B800D134E3 /* ExchangeAppApp.swift in Sources */,
 				2258B0D42C20A7E800D134E3 /* User.swift in Sources */,

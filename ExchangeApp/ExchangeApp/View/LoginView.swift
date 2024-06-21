@@ -21,7 +21,7 @@ struct LoginView: View {
                         .foregroundStyle(Color(.darkGray))
                         .font(.largeTitle)
                         .bold()
-                        .padding(-50)
+                    
                     
                     InputLineView(text: $email,
                                   title: "Email Address",
@@ -39,7 +39,8 @@ struct LoginView: View {
                     ButtonView(title: "Login")
                     
                     NavigationLink{
-                        
+                        SigninView()
+                            .navigationBarBackButtonHidden(true)
                     }label: {
                         HStack(spacing: 3){
                             Text("New member?")
@@ -50,6 +51,7 @@ struct LoginView: View {
                     }
                 }
                 .padding(.horizontal)
+               
             }
         }
     }
