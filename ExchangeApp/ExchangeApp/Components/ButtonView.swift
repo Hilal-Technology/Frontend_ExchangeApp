@@ -9,18 +9,18 @@ import SwiftUI
 
 struct ButtonView: View {
     let title: String
+    let action: () -> Void
     
     var body: some View {
-        Button {
-            print("Clicked")
-        } label: {
-            Text(title)
-            .fontWeight(.semibold)
-            .foregroundStyle(Color(.white))
-            .frame(width: UIScreen.main.bounds.width - 32, height: 48)
-        }
-        .background(Color(Color.blue))
-        .addBorder(Color.blue, width: 1, cornerRadius: 10)
+        Button(action: action) {
+                    Text(title)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Color(.white))
+                        .frame(width: UIScreen.main.bounds.width - 32, height: 48)
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .addBorder(Color.blue, width: 1, cornerRadius: 10)
+                }
     }
 }
 
@@ -33,5 +33,7 @@ extension View {
 }
 
 #Preview {
-    ButtonView(title: "Sign In")
+    ButtonView(title: "Sign In") {
+            print("Clicked")
+        }
 }

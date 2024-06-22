@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct SigninView: View {
-    @State private var email = ""
-    @State private var password = ""
-    @State private var fullname = ""
-    @State private var confirmPassword = ""
+    @StateObject var signer = SigninViewViewModel()
     @Environment(\.dismiss) var dismiss
+    @State private var navigateToHome = false
+    
     var body: some View {
         NavigationStack{
             ZStack {
@@ -24,40 +23,54 @@ struct SigninView: View {
                         .font(.largeTitle)
                         .bold()
                         
+                    if !signer.errorMessage.isEmpty {
+                        Text(signer.errorMessage)
+                            .foregroundStyle(Color.red)
+                    }
                     
-                    InputLineView(text: $email,
+                    InputLineView(text: $signer.email,
                                   title: "Email Address",
                                   placeholder: "name@gmail.com")
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.none)
                     
-                    InputLineView(text: $fullname,
-                                  title: "Full Name",
+                    InputLineView(text: $signer.fullname,
+                                  title: "Name Surname",
                                   placeholder: "Göknur Arıcan")
                     
                     
-                    InputLineView(text: $password,
+                    InputLineView(text: $signer.password,
                                   title: "Password",
                                   placeholder: "Enter password", 
                                   isSecuredField: true)
                 
 
-                    ButtonView(title: "Sign In")
+                    ButtonView(title: "Sign In") {
+                                signer.signin()
+                            }
                     
                     Button{
                       dismiss()
                     } label: {
                         HStack(spacing: 3){
                             Text("Already have an account?")
-                            Text("Sign In")
+                            Text("Login")
                                 .fontWeight(.bold)
                         }
                         .font(.system(size: 14))
                     }
                 }
                 .padding(.horizontal)
-                
             }
+            
+            .navigationDestination(isPresented: $navigateToHome) {
+                LoginView()
+            }
+            .onReceive(signer.$isSignedIn) { isSignedIn  in
+                if isSignedIn {
+                    navigateToHome = true
+                }
+          }
         }
     }
 }
