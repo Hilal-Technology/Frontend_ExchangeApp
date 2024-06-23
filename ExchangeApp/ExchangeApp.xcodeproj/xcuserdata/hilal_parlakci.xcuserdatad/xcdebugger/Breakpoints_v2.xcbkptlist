@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A4B38E60-F8F4-4E4B-BE09-62A754555B71"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20B59F44-F5DF-4033-B34E-5B8B30A46EAF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExchangeApp/ViewModel/LoginViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "LoginViewViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "20B59F44-F5DF-4033-B34E-5B8B30A46EAF - 42718ee9274d5a6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of ExchangeApp.LoginViewViewModel.userViewModel : ExchangeApp.UsersViewModel"
+                  moduleName = "ExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hilal_parlakci/Documents/Summer_Project/Frontend_Project/ExchangeApp/ExchangeApp/ViewModel/LoginViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "20B59F44-F5DF-4033-B34E-5B8B30A46EAF - f1c9a649239783f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExchangeApp.LoginViewViewModel.userViewModel.getter : ExchangeApp.UsersViewModel"
+                  moduleName = "ExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hilal_parlakci/Documents/Summer_Project/Frontend_Project/ExchangeApp/ExchangeApp/ViewModel/LoginViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "20B59F44-F5DF-4033-B34E-5B8B30A46EAF - 82fe8dafd47965d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExchangeApp.LoginViewViewModel.userViewModel.setter : ExchangeApp.UsersViewModel"
+                  moduleName = "ExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hilal_parlakci/Documents/Summer_Project/Frontend_Project/ExchangeApp/ExchangeApp/ViewModel/LoginViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "20B59F44-F5DF-4033-B34E-5B8B30A46EAF - 9f0945af483c77e2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExchangeApp.LoginViewViewModel.userViewModel.modify : ExchangeApp.UsersViewModel"
+                  moduleName = "ExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hilal_parlakci/Documents/Summer_Project/Frontend_Project/ExchangeApp/ExchangeApp/ViewModel/LoginViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "20B59F44-F5DF-4033-B34E-5B8B30A46EAF - 5d2b1cf48101d60e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExchangeApp.LoginViewViewModel.userViewModel.modify : ExchangeApp.UsersViewModel with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hilal_parlakci/Documents/Summer_Project/Frontend_Project/ExchangeApp/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "20B59F44-F5DF-4033-B34E-5B8B30A46EAF - 9fbd2f2312e40e61"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ExchangeApp.LoginViewViewModel.$userViewModel.getter : SwiftUI.ObservedObject&lt;ExchangeApp.UsersViewModel&gt;.Wrapper"
+                  moduleName = "ExchangeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hilal_parlakci/Documents/Summer_Project/Frontend_Project/ExchangeApp/ExchangeApp/ViewModel/LoginViewViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED217D32-77AE-4E0E-9449-BA7D745C5A6C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ExchangeApp/ViewModel/LoginViewViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

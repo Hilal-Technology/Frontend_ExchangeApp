@@ -13,20 +13,23 @@ class LoginViewViewModel: ObservableObject {
     @Published var password = ""
     @Published var errorMessage = ""
     @Published var isLoggedIn = false
-    @ObservedObject var userViewModel = TotalUserModel()
+    @ObservedObject var userViewModel = UsersViewModel()
     
     func login(){
         guard validate() else {
             return
         }
         
+        print("Login view")
+        userViewModel.printUsers()
+        
         let user = userViewModel.TotalUsers[email]
-        /*
+        
         if user == nil {
             errorMessage = "User not found."
             return
         }
-          */
+        
         
         //user nil olarak dönüyor anlayamadım
         
@@ -39,6 +42,7 @@ class LoginViewViewModel: ObservableObject {
             }
 
     }
+    
     
     func validate() -> Bool {
         

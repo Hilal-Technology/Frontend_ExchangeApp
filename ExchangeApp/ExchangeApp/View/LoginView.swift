@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @StateObject var loginer = LoginViewViewModel()
+    @EnvironmentObject var user : UsersViewModel
     @State private var navigateToHome = false
         
     
@@ -23,18 +23,18 @@ struct LoginView: View {
                         .font(.largeTitle)
                         .bold()
                     
-                    if !loginer.errorMessage.isEmpty {
-                        Text(loginer.errorMessage)
+                    if !user.errorMessage.isEmpty {
+                        Text(user.errorMessage)
                             .foregroundStyle(Color.red)
                     }
                     
-                    InputLineView(text: $loginer.email,
+                    InputLineView(text: $user.email,
                                   title: "Email Address",
                                   placeholder: "name@gmail.com")
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.none)
                     
-                    InputLineView(text: $loginer.password,
+                    InputLineView(text: $user.password,
                                   title: "Password",
                                   placeholder: "Enter password",
                                   isSecuredField: true)
@@ -42,7 +42,7 @@ struct LoginView: View {
                     //Sign in button
                     
                     ButtonView(title: "Login") {
-                        loginer.login()
+                        user.login()
                     }
                     
                     NavigationLink(destination: SigninView().navigationBarBackButtonHidden(true)) {
@@ -60,8 +60,8 @@ struct LoginView: View {
             .navigationDestination(isPresented: $navigateToHome) {
                 HomeView()
             }
-            .onReceive(loginer.$isLoggedIn) { isLoggedIn in
-                if isLoggedIn {
+            .onReceive(user.$isLogedIn) { isLogedIn in
+                if isLogedIn {
                     navigateToHome = true
                 }
             }

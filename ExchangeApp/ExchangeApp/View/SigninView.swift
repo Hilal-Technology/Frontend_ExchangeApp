@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct SigninView: View {
-    @StateObject var signer = SigninViewViewModel()
     @Environment(\.dismiss) var dismiss
     @State private var navigateToHome = false
+    @EnvironmentObject var user :  UsersViewModel
     
     var body: some View {
         NavigationStack{
@@ -23,30 +23,30 @@ struct SigninView: View {
                         .font(.largeTitle)
                         .bold()
                         
-                    if !signer.errorMessage.isEmpty {
-                        Text(signer.errorMessage)
+                    if !user.errorMessage.isEmpty {
+                        Text(user.errorMessage)
                             .foregroundStyle(Color.red)
                     }
                     
-                    InputLineView(text: $signer.email,
+                    InputLineView(text: $user.email,
                                   title: "Email Address",
                                   placeholder: "name@gmail.com")
                     .autocorrectionDisabled()
                     .textInputAutocapitalization(.none)
                     
-                    InputLineView(text: $signer.fullname,
+                    InputLineView(text: $user.fullname,
                                   title: "Name Surname",
                                   placeholder: "Göknur Arıcan")
                     
                     
-                    InputLineView(text: $signer.password,
+                    InputLineView(text: $user.password,
                                   title: "Password",
                                   placeholder: "Enter password", 
                                   isSecuredField: true)
                 
 
                     ButtonView(title: "Sign In") {
-                                signer.signin()
+                        user.signin()
                             }
                     
                     Button{
@@ -66,7 +66,7 @@ struct SigninView: View {
             .navigationDestination(isPresented: $navigateToHome) {
                 LoginView()
             }
-            .onReceive(signer.$isSignedIn) { isSignedIn  in
+            .onReceive(user.$isSignedIn) { isSignedIn  in
                 if isSignedIn {
                     navigateToHome = true
                 }

@@ -13,8 +13,8 @@ class SigninViewViewModel: ObservableObject {
     @Published var password = ""
     @Published var fullname = ""
     @Published var errorMessage = ""
-    @ObservedObject var userViewModel = TotalUserModel()
     @Published var isSignedIn = false
+    @ObservedObject var userViewModel = UsersViewModel()
     
     init(email: String = "", password: String = "", fullname: String = "") {
         self.email = email
